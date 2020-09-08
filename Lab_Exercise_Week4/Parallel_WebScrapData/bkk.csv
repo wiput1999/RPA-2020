@@ -1,0 +1,39 @@
+﻿Currency,Description,"Bank Notes
+Buying Rates","Bank Notes
+Selling Rates","Sight Bill
+Buying Rates","TT
+Buying Rates","Bill - DD - TT
+Selling Rates"
+USD1,USD: 1-2,29.93,31.37,,,
+USD5,USD: 5-20,30.28,31.37,,,
+USD50,USD: 50-100,30.74,31.37,30.96,31.06,31.36
+GBP,United Kingdom,40.85,42.00,41.21750,41.32500,42.19500
+EUR,Euro Zone,36.46,37.45,36.67000,36.75750,37.49250
+JPY,Japan (:100),28.78,29.61,28.99500,29.06500,29.85250
+HKD,Hong Kong,3.92,4.07,3.97250,3.98750,4.06500
+MYR,Malaysia,6.89,7.64,7.39750,7.43500,7.63250
+SGD,Singapore,22.38,23.24,22.54500,22.60750,23.24000
+BND,Brunei,21.89,23.04,-,-,-
+CNY,China,4.27,4.64,4.46000,4.49750,4.64250
+IDR,Indonesia (:1000),1.82,2.19,2.06115,2.08805,2.19000
+MMK,Myanmar (:100),-,-,-,-,2.43250
+INR,India: 50-1000,-,-,-,-,0.44500
+KRW,Korea,0.0223,0.0256,-,-,-
+LAK,Laos (:1000),3.15,3.50,-,-,-
+PHP,Philippines,0.51,0.65,-,-,0.65500
+TWD,Taiwan,0.94,1.03,-,-,-
+AUD,Australia,22.04,23.38,22.35750,22.42500,23.38000
+NZD,New Zealand,20.60,21.41,20.72000,20.78750,21.39500
+CHF,Switzerland,33.31,34.36,33.80000,33.90750,34.63500
+DKK,Denmark,4.75,5.07,4.93750,4.95250,5.04250
+NOK,Norway,3.36,3.62,3.49500,3.50750,3.59500
+SEK,Sweden,3.41,3.65,3.54500,3.55500,3.62500
+CAD,Canada,23.26,24.33,23.52000,23.57250,24.22750
+RUB,Russia,0.32,0.46,-,-,-
+VND,Vietnam (:1000),1.10,1.42,-,-,-
+ZAR,South Africa,1.66,1.93,-,-,-
+AED,United Arab Emirate,7.44,8.54,-,-,-
+BHD,Bahrain,69.40,83.08,-,-,-
+OMR,Oman,68.94,80.93,-,-,-
+QAR,Qatar,-,-,-,-,-
+SAR,Saudi Arabia,6.90,8.36,-,-,-
