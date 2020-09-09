@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1051,3821" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1051,3761" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
       <x:String>System.Activities</x:String>
@@ -48,7 +48,7 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="You need to keep open Chrome browser with the following url:&#xD;&#xA;&quot;https://fauxid.com/&quot; before running this robot." DisplayName="Scrape Fake Person Info" sap:VirtualizedContainerService.HintSize="1031,3721" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="You need to keep open Chrome browser with the following url:&#xA;&quot;https://fauxid.com/&quot; before running this robot." DisplayName="Scrape Fake Person Info" sap:VirtualizedContainerService.HintSize="1031,3661" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="root" />
       <Variable x:TypeArguments="x:String" Name="excelPath" />
@@ -93,32 +93,32 @@
         <InArgument x:TypeArguments="x:String">[excelPath + "\person_list.xlsx"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:PathExists DisplayName="Path Exists" Exists="[excelPathExist]" sap:VirtualizedContainerService.HintSize="989,90" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[excelPath]" PathType="Folder" />
-    <If Condition="[excelPathExist]" sap:VirtualizedContainerService.HintSize="989,235" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:PathExists DisplayName="Path Exists" Exists="[excelPathExist]" sap:VirtualizedContainerService.HintSize="989,89" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[excelPath]" PathType="Folder" />
+    <If Condition="[excelPathExist]" sap:VirtualizedContainerService.HintSize="989,232" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230.5,62" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;Folder already exisits: &quot; + excelPath]" />
+        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;Folder already exisits: &quot; + excelPath]" />
       </If.Then>
       <If.Else>
-        <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[excelPath]" />
+        <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[excelPath]" />
       </If.Else>
     </If>
-    <ui:PathExists DisplayName="Path Exists" Exists="[fileExist]" sap:VirtualizedContainerService.HintSize="989,90" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[outputFile]" PathType="File" />
+    <ui:PathExists DisplayName="Path Exists" Exists="[fileExist]" sap:VirtualizedContainerService.HintSize="989,89" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[outputFile]" PathType="File" />
     <ui:BuildDataTable DataTable="[dataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="989,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Address&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Social_x0020_Security_x0020_Number&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_of_x0020_Birth&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Age&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Blood_x0020_Type&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <If Condition="[fileExist]" sap:VirtualizedContainerService.HintSize="989,212" sap2010:WorkflowViewState.IdRef="If_4">
+    <If Condition="[fileExist]" sap:VirtualizedContainerService.HintSize="989,209" sap2010:WorkflowViewState.IdRef="If_4">
       <If.Then>
-        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230.5,62" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;The excel file already exists: &quot; + outputFile]" />
+        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;The excel file already exists: &quot; + outputFile]" />
       </If.Then>
       <If.Else>
         <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Name&quot;, &quot;Address&quot;, &quot;Social Security Number&quot;, &quot;Date of Birth&quot;, &quot;Age&quot;, &quot;Blood Type&quot;}]" DataTable="[dataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
       </If.Else>
     </If>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Fake'" sap:VirtualizedContainerService.HintSize="989,2399" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="ff015c08d9ba05e6ab02b35ed2d9ba72" Selector="&lt;html app='chrome.exe' title='Fake Name Generator | FauxID.com' /&gt;">
-      <ui:BrowserScope.Body>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="989,2349" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://fauxid.com">
+      <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="955,2253" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence sap:VirtualizedContainerService.HintSize="955,2250" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -303,7 +303,7 @@
                 </Sequence>
               </ui:CommentOut.Body>
             </ui:CommentOut>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="913,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;DOB: &quot; + dob + &quot; | age: &quot; + age.ToString]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="913,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;DOB: &quot; + dob + &quot; | age: &quot; + age.ToString]" />
             <ui:AnchorBase AnchorPosition="Auto" DisplayName="Get Blood Type" sap:VirtualizedContainerService.HintSize="913,198" sap2010:WorkflowViewState.IdRef="AnchorBase_5">
               <ui:AnchorBase.Action>
                 <ActivityAction x:TypeArguments="ui:Anchor">
@@ -343,7 +343,7 @@
               </ui:AnchorBase.AnchorProvider>
             </ui:AnchorBase>
             <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{name, address, id, dob, age, blood}]" DataTable="[dataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="913,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-            <If Condition="[fileExist]" sap:VirtualizedContainerService.HintSize="913,437" sap2010:WorkflowViewState.IdRef="If_5">
+            <If Condition="[fileExist]" sap:VirtualizedContainerService.HintSize="913,435" sap2010:WorkflowViewState.IdRef="If_5">
               <If.Then>
                 <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="[outputFile]">
                   <ui:ExcelApplicationScope.Body>
@@ -385,13 +385,7 @@
             </If>
           </Sequence>
         </ActivityAction>
-      </ui:BrowserScope.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:BrowserScope>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
   </Sequence>
 </Activity>

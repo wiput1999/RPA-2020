@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="538,2271" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="538,2508" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
       <x:String>System.Activities</x:String>
@@ -47,12 +47,13 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Install other languages for OCR:&#xD;&#xA;https://docs.uipath.com/studio/docs/installing-ocr-languages&#xD;&#xA;&#xD;&#xA;https://forum.uipath.com/t/installing-new-ocr-language/123791/3&#xD;&#xA;&#xD;&#xA;C:\Users\...\.nuget\packages\uipath.vision\2.0.3\build\tessdata&#xD;&#xA;" sap:VirtualizedContainerService.HintSize="518,2211" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Install other languages for OCR:&#xA;https://docs.uipath.com/studio/docs/installing-ocr-languages&#xA;&#xA;https://forum.uipath.com/t/installing-new-ocr-language/123791/3&#xA;&#xA;C:\Users\...\.nuget\packages\uipath.vision\2.0.3\build\tessdata&#xA;" sap:VirtualizedContainerService.HintSize="518,2408" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="id" />
       <Variable x:TypeArguments="x:String" Name="firstName" />
       <Variable x:TypeArguments="ui:GenericValue" Name="nationality" />
       <Variable x:TypeArguments="x:String" Name="validity" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="code" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -60,13 +61,13 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Open Id Card by Photo" sap:VirtualizedContainerService.HintSize="476,523" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Open Id Card by Photo" sap:VirtualizedContainerService.HintSize="476,520" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="s" KeyModifiers="Win">
+      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="s" KeyModifiers="Win">
         <ui:SendHotkey.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
             <ui:Target.TimeoutMS>
@@ -78,7 +79,7 @@
           </ui:Target>
         </ui:SendHotkey.Target>
       </ui:SendHotkey>
-      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="[Environment.CurrentDirectory + &quot;\Sample_ID.png&quot;]" KeyModifiers="None" SendWindowMessages="True">
+      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="[Environment.CurrentDirectory + &quot;\Sample_ID.png&quot;]" KeyModifiers="None" SendWindowMessages="True">
         <ui:SendHotkey.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
             <ui:Target.TimeoutMS>
@@ -90,7 +91,7 @@
           </ui:Target>
         </ui:SendHotkey.Target>
       </ui:SendHotkey>
-      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
+      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
         <ui:SendHotkey.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
             <ui:Target.TimeoutMS>
@@ -103,19 +104,19 @@
         </ui:SendHotkey.Target>
       </ui:SendHotkey>
     </Sequence>
-    <Sequence DisplayName="Screen Scraping" sap:VirtualizedContainerService.HintSize="476,1184" sap2010:WorkflowViewState.IdRef="Sequence_19">
+    <Sequence DisplayName="Screen Scraping" sap:VirtualizedContainerService.HintSize="476,1392" sap2010:WorkflowViewState.IdRef="Sequence_19">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Photos Applicati'" sap:VirtualizedContainerService.HintSize="434,1092" sap2010:WorkflowViewState.IdRef="WindowScope_6" InformativeScreenshot="49f94ecba9c538a0a9c36bbe8149713d" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;">
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Photos Applicati'" sap:VirtualizedContainerService.HintSize="434,1300" sap2010:WorkflowViewState.IdRef="WindowScope_6" InformativeScreenshot="49f94ecba9c538a0a9c36bbe8149713d" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;">
         <ui:WindowScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,946" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1154" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -232,12 +233,49 @@
                   <OutArgument x:TypeArguments="ui:GenericValue">[nationality]</OutArgument>
                 </ui:GetOCRText.Text>
               </ui:GetOCRText>
+              <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'text  Sample_ID.png'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_6">
+                <ui:GetOCRText.OCREngine>
+                  <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                    <ActivityFunc.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                    </ActivityFunc.Argument>
+                    <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_6" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2">
+                      <ui:GoogleOCR.AllowedCharacters>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </ui:GoogleOCR.AllowedCharacters>
+                      <ui:GoogleOCR.DeniedCharacters>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </ui:GoogleOCR.DeniedCharacters>
+                    </ui:GoogleOCR>
+                  </ActivityFunc>
+                </ui:GetOCRText.OCREngine>
+                <ui:GetOCRText.Target>
+                  <ui:Target Element="{x:Null}" InformativeScreenshot="b98831c9594f68dce3f517a592198ae8" Selector="&lt;uia automationid='AutomationBackgroundControl' cls='Photos.Viewer.Controls.AccessibleContentControl' name='Sample_ID.png' /&gt;">
+                    <ui:Target.ClippingRegion>
+                      <ui:Region Rectangle="337, 783, 1182, 60" />
+                    </ui:Target.ClippingRegion>
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:GetOCRText.Target>
+                <ui:GetOCRText.Text>
+                  <OutArgument x:TypeArguments="ui:GenericValue">[code]</OutArgument>
+                </ui:GetOCRText.Text>
+              </ui:GetOCRText>
             </Sequence>
           </ActivityAction>
         </ui:WindowScope.Body>
       </ui:WindowScope>
     </Sequence>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="476,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[id + vbCr + firstName + vbCr + validity + vbCr + nationality]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="476,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[id + vbCr + firstName + vbCr + validity + vbCr + nationality + Environment.NewLine + code]" />
     <ui:CloseApplication DisplayName="Close Application 'ApplicationFrameHost.ex...'" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
       <ui:CloseApplication.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d1d21b0b1750bd588fc9f2d3811f6b20" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='Photos' /&gt;">
