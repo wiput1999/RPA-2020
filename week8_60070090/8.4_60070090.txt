@@ -1,0 +1,52 @@
+32  Part One  Organizations, Management, and the Networked Enterprise
+
+text commentary complement the TryTracker data. The keys to the game 
+are determined ahead of a specific contest by analyzing a historical database 
+of past matchups between a pair. For example, in 2015 England’s key was 
+to average at least 3.2 meters per carry in the forwards; attempt an offload 
+from 10 percent of opposition tackles; and make more than 66 percent of total 
+line-breaks in the match. Fans can use their mobile devices to keep track of 
+how their favorite team is faring, concentrating on game elements that will 
+increase its winning chances. Key players for each team are selected after the 
+game by comparing a single score compiled using different criteria for each 
+position. Goal scoring is currently excluded so as not to overvalue kickers and 
+undervalue players who contribute to creating scoring opportunities. 
+Like the IBM SlamTracker used at the Grand Slam tennis tournaments, 
+the goal of TryTracker is to provide data visualization and real-time statis-
+tics to draw in fans. To compete with more popular sports such as Premier 
+League football, the RFU hopes that enhanced communication will increase 
+fan engagement. In 2015, IBM TryTracker was an ever-present fixture of Eng-
+landRugby.com’s extensive match coverage. As their understanding of game 
+mechanics and emotional investment in what their team needs to do in order 
+to prevail grows, casual fans will become dedicated fans who return again 
+and again. Beyond marketing strategy, the long-term potential of predictive 
+analysis is that it may provide tactical insights to players and coaches that will 
+improve match play and thus the overall product offered to fans. 
+In 2016 IBM has deployed the same predictive analytics technology to the 
+Australian New South Wales Waratahs Rugby team with an emphasis on pre-
+dicting player injuries based on their general health, and performance data on 
+the field generated from GPS sensors that players wear. 
+
+Sources: IBM, “Building  a Solid Foundation for Big Data Analytics,” IBM Systems Thought 
+ 
+Leadership Paper, 2016; IBM, “IBM Predictive Analytics Reduces Player Injury and Opti-
+mises Team Performance for NSW Waratahs Rugby Team,” IBM.com, accessed November 
+14, 2016; IBM, “3 Ways Big Data and Analytics Will Change Sports,” by Preetam Kumar, IBM 
+Analytics, ibmbigdatahub.com, December 17, 2015; Simon Creasey, “Rugby Football Union 
+Uses IBM Predictive Analytics For Six Nations,” ComputerWeekly.com, 2016; “About Us,” 
+rfu.com, accessed December, 14, 2015; “TryTracker: Rugby Data Analysis,”  Telegraph, 
+November 19, 2015; Oliver Pickup, “How Does TryTracker Work,”  Telegraph, November 19, 
+2015; Simon Creasey, “Rugby Football Union Uses IBM Predictive Analytics for Six Nations,” 
+ComputerWeek, September 2015; “IBM Rugby Insight Summer 2015,” MSN.com/sports, Sep-
+tember 3, 2015; “Live England vs. Scotland with IBM TryTracker,”  www.englandrugby.
+com, March 15, 2015; “IBM TryTracker Confirms Performance,” www.englandrugby.com/
+ibmtrytracker/, November 29, 2014; IBM UK, “IBM TryTracker Rugby Insight: QBE Interna-
+tionals 2014 England vs. Australia,” IBM Rugby Insight, November 27, 2014; Oliver Pickup, 
+“IBM TryTracker: How Does It Work?” Telegraph, October 31, 2013.  
+
+T he challenges facing the RFU demonstrate why information systems are so 
+essential today. The RFU is classified as a “Friendly Society,” somewhere 
+between a true company and a charity. It receives both government support 
+and corporate sponsorship money. But it must maximize revenues from ticket 
+sales, hospitality and catering, television rights, and its travel company in order 
+to support both grassroots and elite rugby in England.
