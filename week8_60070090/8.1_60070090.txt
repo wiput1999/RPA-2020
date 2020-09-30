@@ -1,0 +1,1 @@
+We are getting closer to the 2020 LTS release every day and this is our last monthly preview before we ship in October. As usual, there are many new capabilities in this month’s release (20.9) and I will highlight four of the most significant for you in this blog post. Let’s start with UiPath Apps.
