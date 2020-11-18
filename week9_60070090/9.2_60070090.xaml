@@ -1,0 +1,368 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_9_2_60070090" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,696" sap2010:WorkflowViewState.IdRef="_9_2_60070098_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="_9_2_60070090" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,134.4 230,134.4</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID1</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">30,100</av:Point>
+          <av:Size x:Key="ShapeSize">200,68</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">130,168.8 130,200</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="494,1522" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '192.168.1.206'" sap:VirtualizedContainerService.HintSize="452,1430" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="65e96cca02bda627171663e3cd471841" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='192.168.1.206 - Remote Desktop Connection' /&gt;">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="418,1284" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click Image 'TV_REMOTEDESKTOP_CLASS'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAyCAYAAADhna1TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAWqSURBVGhD7drpTxxlHMDxtiK23laN/4B/haLR91oDiTYxtamJMaaJmiZtIrS1iDWaVqkFCqW7bcNS6laaXcoN5djusrD3QmAPtsuxCxLu+37z8/kNnekzszMwy0yzXC8+LyZhC8838/zm2O5775NjsCfWXhgJe2Ek7IWRIBkm5dOvIOXIzvQ+WZvYmmmiYfDD353KgNNns3ako9/8GLNmIdEwHxw5DmfOZcHFP/7cFq5euw539aWMK7n5kJNfyB1n51yD3IIb3PFfV/PgxMnTMWsW2hFhCrW3oe5hIyO/UAuaW0XccV6BBrS3ddwxRlMc5vfLV+BSds6WhzH0/95n5JGzo+DGTe44l4S4rrnFHWerccY8qKiCLp9/ywsEghAKPWb4A4HY4+DTYzybFId5ZG6B2dnZbWVmZgamp6clFd35R3kYs8UKc3NzG5qfn4eVlRVYXV1NKPwblpeX11V8957yMPUNTTA0NLShkZER5peOzi5DZGJRdaMzy6IhhIQRxCQkzA8PhuDdy49Vd9L4n2gIlpwzhaVaGBxktfUN0NvbC3aHE6qq63jabA4uzNGSKCSfDcBrF4LwKvEK8fLPQXgJnQ/Ci8ShcwE4SLxAJCPy88kZAXieSCKeIw6kB2B/uh/2/7QmrTjKRfD7/dDU1BSjsbFRUpAMX/z7lpaWQFeiVyeMn4SpqXvIhLHZnVBZVcvTZrPzwuDi37kYgrd/DcFbWSF4kzj8SwjeyOyG19lgT2Lhz67FCpJQQRIpCEnEWhzxMD6fj1twQ0ODLAFyZcIoi4uL6oUR2zpCdJhDZKGiUTJJFBKDi4JIDC4KkZTxNMoBEmTfE3QYvPJMTEwwxsbGZMGrEUZJaJiDZIEY5bCCKHiWsFGEYaxWKxQXFzN0Op0sdrtd/TB+fwCqa+qgp6eXmSflFdU8ra22mDBxb591ogjDDA4OMnNGDtx2CD+jehi8a6wnzxi9vX3gcLqgpraex07mDh0GF6t0pkiFwatPJBKBjo6ODbW3t4PX62XgZ1QPI7Z1hHhhyFWG2z50FERiyJkpQmm6KHdJttlsoNfr4+J0OrdGGCWDVkyqLsL8+wjvsvG2XwoO2qmpKR4c2KqH8ZGHtIrKGjJjesBK5omxrIKnxdrKC4P3JTHbh44iY6YI0WFwi1RXV6+rqqqKp7OzU/0wwWA3NDaZoK+vD1wuDzNvaDh36DB4o6Z0pgjRYfBmzWKx8JjN5nWFQiH1w4htHSFhGDW2D40OMz4+zlxlhAYGBiThZxIeBm/r1YyC6DAmkwm0Wm1c8N5H9TBdXT4oK6+EMJkxOE/uG8p48NVETBg6yiZmihAdZnh4mJl3KBwOy4KfwSgLCwvqhenuDkGzyczMGLfHCw2NzTwutycmjNKZIkSHwYU6HA4G3tHKgRExCl7REraVMIIa24dGh8F7EoPBEBePx8NESWiYAySEmlEQHYZ9SpaLPVNUD9PZ2QUGYzmEwz3MPLlXauAxPbLww6TjexVlM0WIDYNR8IwxGo2yPbMzBt+sY5C+/n7wtncw84bm8bTzwuALJqUzRQjDsGcK3pPgY8FG2traODiXVA8jtnWEhGHUOlNYqUX93NbA30dfcYTwPY1w+9ASF4YsROlMEaLDNDc3g0ajkYSvG8SCsBIWRmxhStFhRkdHIRqNisLXC5OTk6JBWDs2jJT1tg9tV4WRGwW/HFTlm8jtECaeKPheZleEiTfKrgizmSgJC/O3ZYyJg764I1cEPt/Apea1p2OlURIWhv2KI57vkpU++0gRi5LQMM8yilgAMVJRUELCbOUzhaVKmBJ9KZjMlg2ZW6zgdHvBJZPT7QGHyy2f0w12p0sWm8PJ/OcDKfmFNzcfJoWE+f7MecjI/G1H+vLbUzFrFhINgz5KPQEfp329I3342XHRNdMkw+x2e2Ek7IURdQz+B7uDtXUDqe4NAAAAAElFTkSuQmCC" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target Element="{x:Null}" Selector="{x:Null}">
+                      <ui:Target.ClippingRegion>
+                        <ui:Region Rectangle="9, 152, 84, 87" />
+                      </ui:Target.ClippingRegion>
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'TV_REMOTEDESKTOP_CLASS'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="95" OffsetY="12" Position="TopRight" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAVCAYAAAAQAyPeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFPSURBVFhH7ZTREcMgCEDjWM7kPA7jKg4jDRiUEpLaa79a3l2ukRiEp+kGzgmXYuBSDFyKgUsxeCmltQIpJCitHRGMVcgxQq4z9ku4FAOXYvAVKSUF2LaNrpgrxfqcGU+lz20lQUiZnoWYodYMcf8tOdK8EGZenMvv63hIZayL9w3zhD7mGhAZD6qPKz6WQoticzfSZA5qSDZ4FM2N1F0ONqlhEXyPTaJolk+CMT/lO9ZStckcd3wuhZ7vRYnFOIaF88UidGGnwsVYn7bRuMqBJ2acRLUBsgaZ444FKc+7jpixowDccUsksy6lCxnNSllvSJHzVnkpBcFFZXI64oZx3ZD8tpl1KdjcFC/XXJaCuUSOVZaknI6xOAV9Yf4jmwXoT+iqoWspjUTw+zGlEV+VQuN9LuegPMZGaZak/BsuxcClGLgUA5di4FIMXMoJgAcwlCqqXiIhGgAAAABJRU5ErkJggg==" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target Element="{x:Null}" Selector="&lt;wnd cls='UIMainClass' title='192.168.1.206 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.ClippingRegion>
+                        <ui:Region Rectangle="238, 225, 111, 21" />
+                      </ui:Target.ClippingRegion>
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'TV_REMOTEDESKTOP_CLASS'" EmptyField="True" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="admin">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8d054ce8dcc84f15de3710ce1e270686" Selector="&lt;wnd cls='UIMainClass' title='192.168.1.206 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'TV_REMOTEDESKTOP_CLASS'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="102" OffsetY="16" Position="TopRight" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAhCAYAAABk391mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAF6SURBVGhD7ZSBjcMgDEXDWMzEPAzDKgyDD0McHBK3zUmXRrr/pErBCdR+YBYCp0CMAcQYQIwBxBhAjAHEGECMAcQYQIwBxBhAjMFbMaVkit7Rsizt55ynmMv69tmUFMiFtI6u8aGYIaPkSN4FSuX5cu4VM42fzNfE5OhVi41TxAltcR8p1/gxliioObyWFNH/o7/rz6qVVaEpOAqRT7AjH/Pu29by8U4xvAtrsRoubCS3P1HvYvLsRQa3a/sPjveiBZYhY37WubTxTu4YX+UXl686GW3Xj7vZEpzuobPYJpNF1LkprKKq/C65rj9twpBW2pohSS6c5379W1tJ6FJGfE5CpOkdnWNbkXUuFyhCNkGXxPDaTxDDCapE9DEWzubqmOxyCH2dLoJbahXX3r9uJRHD6Hcy93YxDCcibcTFcRKSkMR7Sxxjgr50GV0cI6dM5s7fajH62z+/fP8rEGMAMQYQYwAxBhBjADEGEGMAMQYQYwAxBhBzCtEPOjye7BkTh0EAAAAASUVORK5CYII=" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target Element="{x:Null}" Selector="&lt;wnd cls='UIMainClass' title='192.168.1.206 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.ClippingRegion>
+                        <ui:Region Rectangle="234, 264, 130, 23" />
+                      </ui:Target.ClippingRegion>
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+                <Sequence DisplayName="Type password" sap:VirtualizedContainerService.HintSize="376,288" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="Password" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA02I1AtHozUWpWSUXU8TU2gAAAAACAAAAAAAQZgAAAAEAACAAAAAMVVmVaLD7s1EPmCJYhu09bB/tWesTN1g7EIlc6VmW2AAAAAAOgAAAAAIAACAAAAARrDCwwr5Pf4XDA5VOBgtYV/XaMBMCTqH2h2xPwtUzdhAAAAD7/1x2v7llxmfAPaqi0K30QAAAAFpKwPU/eUCHndKTh4QoNMf4n2TeugC2/JFve9ZyKECpg8OmlL6IxHxRDJfEWCugXiXnKnQag/w91/YGPBQtXG8=" Result="[Password]" />
+                  <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'TV_REMOTEDESKTOP_CLASS'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="False" Text="[Password]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8d054ce8dcc84f15de3710ce1e270686" Selector="&lt;wnd cls='UIMainClass' title='192.168.1.206 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                </Sequence>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'TV_REMOTEDESKTOP_CLASS'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ClickImage_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAE/SURBVGhD7ZWBDYIwEEVpDAsRtjEaRmAEjOyhCWMQJrHMchZLbcWqEOuJ+H/yEmmPMz6bXkQIayCcORDOHAhnDoQz56HwPM/BSKbkqfC2bcELIJwZCGcGwpmBcGZmLVzKmookpbKR3v13+GTvZ0A4hFsgfCbCpZRUFwlFUXRBxBlVak3vneiwFnpdxLTdFZSkJTX9vu1he5vP+6OqFUK9t6K0bG7qQ/Fzwo3slSPxdFhfn909I9+ttX2Gwm2drJV4508MyQ8KVxI3wzVT1wmOKaucvU7eKOG2p+97Q7Ew4Z56CB+PX/jrKyXOqr52ypUC4f0P1wNQD0E9zNzBeD807TtTh+bfCw9Bd/rNiZ8DixauT+rtEP02ixPenejhFeSr+xaLPuFzJKhwMI4peSgc+UwgnDkQzhwIZw6Es4boDKMgAFuPpmrJAAAAAElFTkSuQmCC" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'TV_REMOTEDESKTOP_CLASS'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="30" OffsetY="18" Position="BottomLeft" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAAaCAYAAAANIPQdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUXSURBVFhH7VdpT1tHFO1/aRUpaqVUXaQmH1o1SpOmaZqilLRu1BaxiFaEhIYQWogBs5jNxmYHG2PANsa7/ZZ58/znTs+AHziOY7ekygeLD0fCb+bOzLnLuZd3yuUyWh0XJFsFFyRbBRckFWzLRkmzsZ+zEXWQt7FXtKHJMmQdmzeBFDayJRuHxP91flOSesaCf9XAtecarhDvK4zo+MRrIkCipTo2b4JiQmDQb6BtQSBY4m8Srbfvv6AhSS1tYXLZwM9eA10hiakDCV9cYjYi8JdPR1vAhCclUahje14U4iaeLBj4ZlbAX3wLJLN7JnpndXw1a8KnnV0oNIlEhN726OjfsRAxX7U9L946yRSJdCqSPhMhi6lrV9akDbNgYWzJgDtiYZMOcGxU/SayEtvpE+wWbGSqnCAMG6n82bpCtGpPXZK8T9OpA9wbdmyoCzm+STpvaoCGJAsxE4+8JDlpYCTDyPLQ6nXJB6hL7NNvEssbBlyjGi49O8G1OYGhmH1qk47yzJmzdYXrzJShmDw+py5JzcJWyMAN7v2gYvMlNWEs++8i3ZCkZUisbbMeJ3Vc9Ri4Na0uN9G1YSGsl2GcetGGJSQifEj3ooFfVgTmDy0Eme59fHDXkoDnUMLMCYww+t1+E8P7EkF+m1kx8HBOx13aJHleppYkS2MjZKJ/ntrAPV46w8fff1Kc7swLLGaoxjXOr0VDkurx+ZyFtV2B/nWCIvTDlI5bE4wWL+wLc41pozGd9KLAOFPbtWhigASUA2xTYufAwuKehdWsDVGysMy/lxISSaEygK2Jjunw6viCJbFHm1QNyfQRHRMw8NO8iUkSKpCQKNH5YRMPxnUMRJm6VeVSD01I1kBFlof3Um1vUnQ+devoIdFQQaKYMtEzpuG3oMB06iw9XwKdkWY97lCR144ULHgCOr5npryOZIzp3TtPx86ZmKJNsGI3tW2ig/e51ulA9u6691XQkKStoqFQu8YBwcgKPObjvmP69oUs5OMG7o9o6Fyz2D9r9iuQYJnRHl3QcYO99r3BE1ylzUd0Vj2SvkIZEZbLrx4N7z4lKjYOLj3X8bmfmZI+N0mJlU0TL7YEZmsjY1NddQtupmc706iPbaRZJC2TqhrW8cBLG+6ZYzQ3iMC66sONI/k7I/k175nh/lVis4ItqmyEA0mBqV97XzUakLSxtUaRIJEfWX+qTegVJZN8cDYp0DXBGqSouCkgetHCBAVE1eQTVZPcp2oulqCno0xLDhLRVQ13GP12Rlv1VsmaDVB47jP1X0cyk2L0WZMukvSwJvNKZGiXYK2+2GAAkqxvo/rdr6JhuubiAsN+1gxrsJsTzwyVLUDROH40Raid3wciEiH2RqWuu2EDPT6q6zJVkOT8HNGeUk07SeAR98W47qJw3eWDn/EMP9V3kFG6TQG5vsBezIgcsW1Vk1TqukkdeEx1dfHc6X2WA6M7FGSdjvP+XYk9zrn13u+gqfCo2dVHb382xB5FXFYY1vHhuAl30sbRS6lykuIP3ZV9xMdTTDc+pMCatEsCY3TC7b+5xnq6PGrgD0apg6S+rZBKHNAx3HOP7SHgzK6qT9JBN3neFedcEmzblDhqEkWFpiSd/0KinGIixM4xbOyqiYMEBVOser+aTA5zzr6TiSfFhxz/N0GieXo95qxTFVP8nWRdxdSwT0KCpZDht3jlt2Onc1I6UOc55/L+OHt17f310JRkK+CCZKvggmRroIx/AHzcvwwACUU2AAAAAElFTkSuQmCC" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd cls='TV_REMOTEDESKTOP_CLASS' title='TV 3.0' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+      </Sequence>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">30,200</av:Point>
+              <av:Size x:Key="ShapeSize">200,68</av:Size>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '192.168.1.206'" sap:VirtualizedContainerService.HintSize="434,1304" sap2010:WorkflowViewState.IdRef="WindowScope_5" InformativeScreenshot="533292c90421943d2bfe070fccfa24c4" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='192.168.1.206 - Remote Desktop Connection' /&gt;">
+              <ui:WindowScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1158" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'TV_REMOTEDESKTOP_CLASS'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                      <ui:ClickImage.CursorPosition>
+                        <ui:CursorPosition OffsetX="82" OffsetY="10" Position="TopRight" />
+                      </ui:ClickImage.CursorPosition>
+                      <ui:ClickImage.Image>
+                        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                      </ui:ClickImage.Image>
+                      <ui:ClickImage.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd cls='TV_REMOTEDESKTOP_CLASS' title='TV 3.0' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:ClickImage.Target>
+                    </ui:ClickImage>
+                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'TV_REMOTEDESKTOP_CLASS'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="False" SimulateType="False" Text="123">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="20e2ce7a4359d51aa37e9e84f285acc8" Selector="&lt;wnd cls='TV_REMOTEDESKTOP_CLASS' title='TV 3.0' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'TV_REMOTEDESKTOP_CLASS'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                      <ui:ClickImage.CursorPosition>
+                        <ui:CursorPosition OffsetX="72" OffsetY="16" Position="TopRight" />
+                      </ui:ClickImage.CursorPosition>
+                      <ui:ClickImage.Image>
+                        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                      </ui:ClickImage.Image>
+                      <ui:ClickImage.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd cls='TV_REMOTEDESKTOP_CLASS' title='TV 3.0' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:ClickImage.Target>
+                    </ui:ClickImage>
+                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'TV_REMOTEDESKTOP_CLASS'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" SendWindowMessages="False" SimulateType="False" Text="456">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b3694a035678a41ffd5d3e5c047209d2" Selector="&lt;wnd cls='TV_REMOTEDESKTOP_CLASS' title='TV 3.0' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'TV_REMOTEDESKTOP_CLASS'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_14" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                      <ui:ClickImage.CursorPosition>
+                        <ui:CursorPosition OffsetX="76" OffsetY="14" Position="TopRight" />
+                      </ui:ClickImage.CursorPosition>
+                      <ui:ClickImage.Image>
+                        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                      </ui:ClickImage.Image>
+                      <ui:ClickImage.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd cls='TV_REMOTEDESKTOP_CLASS' title='TV 3.0' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:ClickImage.Target>
+                    </ui:ClickImage>
+                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'TV_REMOTEDESKTOP_CLASS'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_8" SendWindowMessages="False" SimulateType="False" Text="789">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="15b05286a658cded02a5e46b5e8f0429" Selector="&lt;wnd cls='TV_REMOTEDESKTOP_CLASS' title='TV 3.0' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'TV_REMOTEDESKTOP_CLASS'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_15" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                      <ui:ClickImage.CursorPosition>
+                        <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
+                      </ui:ClickImage.CursorPosition>
+                      <ui:ClickImage.Image>
+                        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAVCAYAAADRhGlyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUASURBVFhH7ZdpT1RnFID7A0galw81rW2saTXRskRRsRK11CAFQUSCFE1dUJAdHNYiO8LAyLDINgwgOxVRdAYYkc0BBoFZYBaYYfgvT69o0iV8chhbEj48X8573ps3zz33nPt+tra2xjYfh0qlYlugA2wLdJBtgQ6yLdBBtgU6iFMFWk0L6KaUDM8Y0Jlt2DfIcTarFjMW3TwG6yor9o1zHMGpAucVNcgTD3MyvYNGlR7rBjnOxjj+irFGKW1aE7O2jXMcwXkCF1X01+UScdaPi77RlLQrGbVukOdUFpnqfUxTdDINmkVmtpJA82gtLRUZXL5VRsmtEHLqu2iZtglrqwKLqHurqMtPJiEhRSCfhmcTvFkyYNC8oCsriezkhPV4vriHkRU75qVxFC1SilOEeKKwL6eZNoUGvXGe5ckO6lubKSvIJ0/YlyTKILdtlIEBObLs6wS4nsJf1EzLyAKLqxuf92NxgkC7wBLjjb9TVZhFStcMY+2x5Jc3UtbxFuOKCctcNxWJIYSeOcLxY154/eDFpSw5VX09KFpTuObuzpljx/B0+4lz/nHcH5lnsEdMSfRl/I6fwOvkj3gJVR1V3Enni6doO2PxD4/E1+cXLngfxctbyLlSTnFJOjnR5zj05QEOXCiivE/NwiZXoRMErrBmf0ndjWQyw/OQG4wsrjyjKqmEkvQWBuenePMoCN/IbG5KBjGbZrE/FxEcV07YtQgeJJzgcPoLnqiNaIcqaRFH4JnehCjwPPezi6kaNWG1CLzM5W5qARfjSplqj+fo6VRElQrUVqHKNO1ku//KA0k91bJ6pGHR1E4bmN4Sn7DVxNqomHi/k3y3ey/73dxx8zjIvj1H8AnJpEI5wVh1IPGlMor7DKyuCsKN04yp5+mvL0KWGcKdrgVG9db1Ka6fG2Rwqpv8n13x2f81+w654yFUqMfBvXxxOJjTYRkMtCfhm9RMRZ8Gk92KRf+G7phgxHUVFElqt5LAFaxGNarC30iOjiQ8WkRaWtp7bkdw424aoXltKB76c7e0gcI+HTabmTWDkvb6P5CmxiBODeBmxyKjOqFXGsaZHJSTXCEl1ceT8PN+BN2599cz82qprGkQWkQiZyIkFD4eR7tqwrSgpPZSKKXVVZRV120hgTY9Jk0vJSGhFEha6Zl7NzQ+rGk6kT3Mwy8sFXlNFNHpmcTlPKShoYamshSibpdyLz4OSUEIV5JqKKuUIS/LpSAjiVOiWopjrpGbJrwQcSNyufw9vUqeDzxhviMO7/MJ3EwW86ipktqqTGJ9U6ls6qJVLkUcGESCpIdetf5/PkTMU+iFvnU9MBeJbJjpf/y2aBlvkyC9GsT9fgXl8QFccduBi8suAXciirrpfTvN9MsyRPs/5/sdLkLcA4/TGTQZ7ehmO5BG+XNi17v4BzyvEpBcjqYrluDIW3i7u+K604XdX31LQImKJ1NzTHTmkXv2G/bsDCJG+ozB5b+fyXE2V6DQz2wWHVOTc2gNln/9+dtYXtSiU08yZzKj1UygHlGiULxjBPXCEkbrCitmLbPDClRKxXp8ZOwtBqFqbNYldDMTjK7HP/BazcTr5+h6kgjJklHU+JQhYV05NMzEgkWY+FaWl+aZGxtiUDnJjM6EeZNvI5s/RD41OhWG3hRCcnupU2g/+W1n6wsUJrjp1SPyml/RP7mEbaMcJ7L1Bf7HbAt0EJVKxZ9LRzlERitoPQAAAABJRU5ErkJggg==" />
+                      </ui:ClickImage.Image>
+                      <ui:ClickImage.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd cls='TV_REMOTEDESKTOP_CLASS' title='TV 3.0' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:ClickImage.Target>
+                    </ui:ClickImage>
+                  </Sequence>
+                </ActivityAction>
+              </ui:WindowScope.Body>
+            </ui:WindowScope>
+          </Sequence>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+  </Flowchart>
+</Activity>
